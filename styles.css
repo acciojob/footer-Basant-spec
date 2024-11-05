@@ -1,1 +1,93 @@
-/* your code here */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo_name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.media-icons {
+    display: flex;
+}
+
+.media-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.link-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Wraps the link boxes on smaller screens */
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.link-box {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and base width */
+    margin: 10px;
+}
+
+.link-box h3 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.link-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-box ul li {
+    margin: 8px 0;
+}
+
+.link-box ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-box ul li a:hover {
+    text-decoration: underline;
+}
+
+.bottom-details {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #555;
+}
+
+.bottom-details p {
+    margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .link-boxes {
+        flex-direction: column; /* Stack link boxes on smaller screens */
+    }
+}
